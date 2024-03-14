@@ -12,8 +12,8 @@ steps:
         gcloud run deploy jay-image \
             --image us-central1-docker.pkg.dev/intense-howl-412323/jay-100853189/jay-image:$COMMIT_SHA \
             --platform managed \
-            --region us-central1    
-options:
-    defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
+            --region us-central1   
 
 images: ['us-central1-docker.pkg.dev/intense-howl-412323/jay-100853189/jay-image:$COMMIT_SHA']
+options:
+    defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
