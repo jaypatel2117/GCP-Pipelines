@@ -5,8 +5,8 @@ steps:
   args: ['push', 'us-central1-docker.pkg.dev/intense-howl-412323/jay-100853189/jay-image:$COMMIT_SHA']
 # Deploy Docker container to Cloud Run using Google Cloud SDK
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-      entrypoint: 'bash'
-      args:
+  entrypoint: 'bash'
+  args:
         - '-c'
         - |
           gcloud run deploy jay-image \
