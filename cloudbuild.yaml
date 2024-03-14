@@ -1,9 +1,9 @@
 steps:
+- name: 'jaypatel-100853189/cloud-builders/docker'
+  args: ['build', '-t', 'intense-howl-412323/jaypatel-100853189/jay-image:$COMMIT_SHA', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/intense-howl-412323/jaypatel-100853189/jay-image:$COMMIT_SHA', '.']
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/intense-howl-412323/jaypatel-100853189/jay-image:$COMMIT_SHA']
+  args: ['push', 'intense-howl-412323/jaypatel-100853189/jay-image:$COMMIT_SHA']
 options:
     defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
 
-images: ['gcr.io/intense-howl-412323/jaypatel-100853189/jay-image:$COMMIT_SHA']
+images: ['intense-howl-412323/jaypatel-100853189/jay-image:$COMMIT_SHA']
