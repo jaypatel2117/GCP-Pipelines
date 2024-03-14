@@ -6,4 +6,4 @@ steps:
 options:
     defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
 
-images: ['gcr.io/intense-howl-412323/jaypatel-100853189:$COMMIT_SHA']
+images: ['intense-howl-412323/jaypatel-100853189:$COMMIT_SHA']
