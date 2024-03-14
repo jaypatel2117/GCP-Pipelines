@@ -1,5 +1,5 @@
 steps:
-- name: 'jaypatel-100853189/cloud-builders/docker'
+- name: 'gcr.io/jaypatel-100853189/cloud-builders/docker'
   args: ['build', '-t', 'intense-howl-412323/jaypatel-100853189/jay-image:$COMMIT_SHA', '.']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'intense-howl-412323/jaypatel-100853189/jay-image:$COMMIT_SHA']
