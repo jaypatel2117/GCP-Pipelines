@@ -7,12 +7,12 @@ steps:
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: 'bash'
   args:
-        - '-c'
-        - |
-          gcloud run deploy jay-image \
+    - '-c'
+    - |
+        gcloud run deploy jay-image \
             --image us-central1-docker.pkg.dev/intense-howl-412323/jay-100853189/jay-image:$COMMIT_SHA \
             --platform managed \
-            --region us-central1
+            --region us-central1    
 options:
     defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
 
