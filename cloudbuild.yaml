@@ -9,7 +9,7 @@ steps:
   args:
     - '-c'
     - |
-        gcloud run deploy jay-image \
+        gcloud run deploy jaypatel-100853189 \
             --image us-central1-docker.pkg.dev/intense-howl-412323/jay-100853189/jay-image:$COMMIT_SHA \
             --platform managed \
             --region us-central1   
